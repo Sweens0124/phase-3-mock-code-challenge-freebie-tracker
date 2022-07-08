@@ -11,11 +11,10 @@ Dev.create(name: "Mr. Meseeks")
 Dev.create(name: "Gazorpazop")
 
 puts "Creating freebies..."
-
-# ***************************************************************
-# * TODO: create freebies! Remember, a freebie belongs to a dev *
-# * and a freebie belongs to a company.                         *
-# ***************************************************************
-# Create freebies Here
+Freebie.create(item_name: "calculator", value: 2, company_id: Company.ids.sample, dev_id: Dev.ids.sample)
+Freebie.create(item_name: "hat", value: 3, company_id: Company.ids.sample, dev_id: Dev.ids.sample)
+Freebie.create(item_name: "pencil", value: 5, company_id: Company.ids.sample, dev_id: Dev.ids.sample)
+Freebie.create(item_name: "shirt", value: 7, company_id: Company.ids.sample, dev_id: Dev.ids.sample)
+Freebie.create(item_name: "notebook", value: 9, company_id: Company.ids.sample, dev_id: Dev.ids.sample)
 
 puts "Seeding done!"
